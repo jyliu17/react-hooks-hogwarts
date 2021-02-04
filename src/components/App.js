@@ -8,12 +8,13 @@ import hogs from "../porkers_data";
 
 function App() {
   const [greased, setGreased] = useState(true)
-  
+  const filteredHogs = hogs.filter((hog) => greased ? hog.grease : false)
+
   return (
     <div className="App">
 
       <Nav />
-      <FilterHog greased={greased} onSetGreased={setGreased}/>
+      <FilterHog filteredHogs={filteredHogs}/>
       <HogsList hogs={hogs}/>
     </div>
   );

@@ -26,7 +26,6 @@ const pigImageObj = {
     'Porkchop': porkchop,
     'Trouble': trouble,
     'Truffle Shuffle': truffle_shuffle,
-
 }
 
 function Hog({ name, specialty, greased, weight, highestMedal }) {
